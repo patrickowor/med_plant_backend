@@ -4,7 +4,7 @@ WORKDIR /mediplant
 COPY . /mediplant/
 RUN apt-get update && apt-get install -y libgl1
 
-RUN pip install -U -y opencv-python
+RUN pip install -U opencv-python
 RUN apt update && apt install -y libsm6 libxext6 ffmpeg libfontconfig1 libxrender1 libgl1-mesa-glx
 RUN pip install -r requirements.txt
 
