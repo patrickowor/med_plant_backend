@@ -1,4 +1,4 @@
-FROM python:3.11.3-alpine
+FROM python:3.10.9-alpine
 
 WORKDIR /mediplant
 
@@ -6,6 +6,7 @@ COPY . /mediplant/
 
 RUN apk update
 RUN apk add make automake gcc g++ subversion python3-dev
+RUN pip3 install --upgrade setuptools pip
 RUN pip install -r requirements.txt
 
 EXPOSE 4000
