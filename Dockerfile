@@ -12,4 +12,4 @@ RUN pip install python-dotenv passlib pyjwt bcrypt sqlalchemy_utils asyncpg  pyt
 
 EXPOSE 4000
 
-CMD [ "uvicorn", "--reload", "--port", "4000", "app.main:app" ]
+CMD [ "uvicorn", "--reload", "--port", "4000", "--host", "0.0.0.0","app.main:app" ]
