@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+asyncpg = "*"
+fastapi = "*"
+sqlmodel = "*"
+uvicorn = "*"
+alembic = "*"
+passlib = "*"
+pyjwt = "*"
+bcrypt = "*"
+sqlalchemy-utils = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
